@@ -1,0 +1,641 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#000;
+}
+
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+
+    width:100%;
+    max-width:1400px;
+    margin:40px auto;
+    background:#000;
+
+    height:520px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 80px;
+
+    overflow:hidden;
+
+}
+
+
+.hero-content{
+
+    color:#fff;
+
+}
+
+
+.hero-content p{
+
+    font-size:18px;
+    margin-bottom:25px;
+
+}
+
+
+.hero-content h1{
+
+    font-size:55px;
+    line-height:1.2;
+    font-weight:600;
+
+    margin-bottom:35px;
+
+}
+
+
+.hero-content a{
+
+    color:#fff;
+    text-decoration:none;
+
+    border-bottom:1px solid #fff;
+
+    padding-bottom:5px;
+
+    font-size:18px;
+
+}
+
+
+.hero-image img{
+
+    width:500px;
+
+}
+
+
+
+/* ===========================
+   SECTION TITLE
+=========================== */
+
+
+.section-title{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+
+.section-title span{
+
+    width:20px;
+    height:40px;
+
+    background:#DB4444;
+
+    border-radius:5px;
+
+}
+
+
+.section-title h3{
+
+    color:#DB4444;
+    font-size:18px;
+
+}
+
+
+.categories,
+.products-section{
+
+    max-width:1400px;
+    margin:80px auto;
+
+}
+
+
+.categories h2,
+.products-section h2{
+
+    font-size:36px;
+    margin-bottom:40px;
+
+}
+
+
+
+/* ===========================
+   CATEGORY
+=========================== */
+
+
+.category-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:25px;
+
+}
+
+
+.category-container a{
+
+    height:150px;
+
+    border:1px solid #ddd;
+
+    text-decoration:none;
+
+    color:#000;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+
+.category-container i{
+
+    font-size:35px;
+
+}
+
+
+.category-container a:hover{
+
+    background:#DB4444;
+
+    color:#fff;
+
+    border-color:#DB4444;
+
+}
+
+
+
+/* ===========================
+   PRODUCTS
+=========================== */
+
+
+.product-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.product-card{
+
+    background:#F5F5F5;
+
+    padding:25px;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.product-card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:contain;
+
+}
+
+
+
+.product-card h3{
+
+    margin-top:20px;
+
+    font-size:18px;
+
+}
+
+
+
+.product-card p{
+
+    color:#DB4444;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    margin:15px 0;
+
+}
+
+
+
+.product-card button{
+
+    width:100%;
+
+    height:45px;
+
+    border:none;
+
+    background:#000;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.product-card button:hover{
+
+    background:#DB4444;
+
+}
+
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+
+@media(max-width:1200px){
+
+
+.hero{
+
+    padding:0 40px;
+
+}
+
+
+.hero-content h1{
+
+    font-size:45px;
+
+}
+
+
+.hero-image img{
+
+    width:400px;
+
+}
+
+
+.category-container{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+
+}
+
+
+@media(max-width:768px){
+
+
+.hero{
+
+    height:auto;
+
+    padding:50px 25px;
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+.hero-content h1{
+
+    font-size:35px;
+
+}
+
+
+.hero-image img{
+
+    width:300px;
+
+    margin-top:30px;
+
+}
+
+
+
+.categories,
+.products-section{
+
+    margin:50px 20px;
+
+}
+
+
+
+.categories h2,
+.products-section h2{
+
+    font-size:28px;
+
+}
+
+
+
+.category-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.product-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+
+
+
+@media(max-width:480px){
+
+
+.category-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.hero-content h1{
+
+    font-size:30px;
+
+}
+
+
+}
+
+
+
+
+
+/* ===========================
+   CUSTOMER REVIEWS
+=========================== */
+
+.customer-reviews{
+
+    max-width:1400px;
+
+    margin:100px auto;
+
+    padding:0 40px;
+
+}
+
+
+
+.customer-reviews h2{
+
+    font-size:36px;
+
+    font-weight:600;
+
+    margin:20px 0 50px;
+
+}
+
+
+
+.review-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.review-card{
+
+    background:#F5F5F5;
+
+    border-radius:10px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+
+.review-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+
+.review-card img{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.review-card h3{
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.stars{
+
+    color:#FFAD33;
+
+    margin-bottom:20px;
+
+    font-size:18px;
+
+}
+
+
+
+.review-card p{
+
+    color:#666;
+
+    line-height:28px;
+
+    font-size:15px;
+
+}
+
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.review-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+.customer-reviews{
+
+    padding:0 20px;
+
+}
+
+
+
+.customer-reviews h2{
+
+    font-size:30px;
+
+}
+
+
+
+.review-container{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+
+
+@media(max-width:480px){
+
+.review-card{
+
+    padding:25px 20px;
+
+}
+
+
+
+.review-card img{
+
+    width:75px;
+
+    height:75px;
+
+}
+
+
+
+.customer-reviews h2{
+
+    font-size:26px;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
